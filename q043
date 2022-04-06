@@ -1,0 +1,9 @@
+int realiz_Fibonachi(int N) {
+	int first = 0, second = 1;
+	for (int i = 2; i < N; i++) {
+		int temp = second;
+		second += first;
+		first = temp;
+	}
+	return first;
+}
